@@ -1,0 +1,33 @@
+{% load static %}
+{% load i18n %}
+
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="container">
+
+    
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <a href="{% url 'main' %}" class="mr-auto"><img src="{% static 'img/logo_invert.png' %}" alt="" class="img-fluid"></a>
+    {% comment %} <h1><a href="{% url 'main' %}">{% trans "ФОП Морев Олексій Геннадійович" %}</a></h1> {% endcomment %}
+    <h2>{% trans "Послуги " %}<span>{% trans "митного брокера" %}</span>{% trans " на всій території України" %}</h2>
+
+    <nav id="navbar" class="navbar">
+        <ul>
+            <li><a class="nav-link active" href="#header">{% trans "Головна" %}</a></li>
+            <li><a class="nav-link" href="#about">{% trans "Про компанію" %}</a></li>
+            <li><a class="nav-link" href="#resume">{% trans "Резюме" %}</a></li>
+            <li><a class="nav-link" href="#services">{% trans "Послуги" %}</a></li>
+            <li><a class="nav-link" href="#contact">{% trans "Контакти" %}</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+    <div class="social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/morev.broker" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/pe-morev-oleksii" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    </div>
+</header><!-- End Header -->

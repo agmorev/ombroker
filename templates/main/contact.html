@@ -1,0 +1,78 @@
+{% load i18n %}
+{% load static %}
+
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+	<div class="container">
+
+		<div class="section-title">
+			<h2>{% trans "Контакти" %}</h2>
+			<p>{% trans "Зв'яжіться з нами" %}</p>
+		</div>
+
+		<div class="row mt-2">
+			
+			<div class="col-md-6 d-flex align-items-stretch">
+				<div class="info-box">
+					<i class="bx bx-map"></i>
+					<h3>{% trans "ФОП Морев Олексій Геннадійович" %}</h3>
+					<p>{% trans "м. Буча, Київська область, Україна" %}</p>
+				</div>
+			</div>
+
+			<div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+				<div class="info-box">
+					<i class="bx bx-share-alt"></i>
+					<h3>{% trans "Соціальні мережі" %}</h3>
+					<div class="social-links">
+						<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+						<a href="https://www.facebook.com/omorev.broker" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+						<a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+						<a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+						<a href="https://www.linkedin.com/company/pe-morev-oleksii/about/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 mt-4 d-flex align-items-stretch">
+				<div class="info-box">
+					<i class="bx bx-envelope"></i>
+					<h3>{% trans "Напишіть нам" %}</h3>
+					<p><a href="mailto:office@ombroker.pp.ua">office@ombroker.pp.ua</a></p>
+				</div>
+			</div>
+			<div class="col-md-6 mt-4 d-flex align-items-stretch">
+				<div class="info-box">
+					<i class="bx bx-phone-call"></i>
+					<h3>{% trans "Подзвоніть нам" %}</h3>
+					<p><a href="tel:+380672700861">+38 (067) 270-08-61</a></p>
+				</div>
+			</div>
+		</div>
+
+		<form method="post" role="form" class="php-email-form mt-4">
+			{% csrf_token %}
+			<div class="row">
+				<div class="col-md-6 form-group">
+					<input type="text" name="name" class="form-control" id="name" placeholder="{% trans "Ваше ім'я" %}" required>
+				</div>
+				<div class="col-md-6 form-group mt-3 mt-md-0">
+					<input type="email" class="form-control" name="email" id="email" placeholder="{% trans "Ваш Email" %}" required>
+				</div>
+			</div>
+			<div class="form-group mt-3">
+				<input type="text" class="form-control" name="subject" id="subject" placeholder="{% trans "Тема" %}" required>
+			</div>
+			<div class="form-group mt-3">
+				<textarea class="form-control" name="message" id="message" rows="5" placeholder="{% trans "Повідомлення" %}" required></textarea>
+			</div>
+			<div class="my-3">
+				<div class="loading">{% trans "Завантаження" %}</div>
+				<div class="error-message"></div>
+				<div class="sent-message">{% trans "Ваше повідомлення було відправлено. Дякуємо!" %}</div>
+			</div>
+			<div class="text-center"><button type="submit">{% trans "Відправити" %}</button></div>
+		</form>
+
+	</div>
+</section><!-- End Contact Section -->

@@ -1,0 +1,120 @@
+{% load i18n %}
+{% load static %}
+
+<!-- ======= Services Section ======= -->
+<section id="services" class="services">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>{% trans "Послуги" %}</h2>
+            <p>{% trans "Перелік послуг" %}</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box" data-toggle="modal" data-target="#serviceCustoms">
+                        
+                        <div class="icon"><a href=""><i class="bi bi-file-ruled"></i></a></div>
+                        <h4>{% trans "Митно-брокерські та агентські послуги" %}</h4>
+                        <p>{% trans "Організація і супровід митного оформлення вантажів по всій товарній номенклатурі, в будь-яких митних режимах, в митних органах на всій території України" %}</p>
+                        
+                    </div>
+                
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                <div class="icon-box" data-toggle="modal" data-target="#serviceLogistics">
+                    <div class="icon"><i class="bi bi-truck"></i></div>
+                    <h4>{% trans "Транспортно-експедиційні послуги" %}</h4>
+                    <p>{% trans "Робота, що безпосередньо пов'язана з організацією та забезпеченням перевезень вантажу за договором транспортного експедирування з пункту відправки до пункту отримання" %}</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                <div class="icon-box" data-toggle="modal" data-target="#serviceInfrastructure">
+                    <div class="icon"><i class="bi bi-building"></i></div>
+                    <h4>{% trans "Розбудова митної інфраструктури" %}</h4>
+                    <p>{% trans "Організація, участь і супроводження розбудови об'єктів митної інфраструктри (митні склади, термінали, пункти пропуску, тощо)" %}</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box" data-toggle="modal" data-target="#serviceConsulting">
+                    <div class="icon"><i class="bi bi-card-list"></i></div>
+                    <h4>{% trans "Консалтинг" %}</h4>
+                    <p>{% trans "Надання компетентних пропозицій щодо оптимізації зовнішньоекономічної діяльності" %}</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box" data-toggle="modal" data-target="#serviceAdditional">
+                    <div class="icon"><i class="bi bi-diagram-3"></i></div>
+                    <h4>{% trans "Супутні послуги" %}</h4>
+                    <p>{% trans "Супутні послуги з питань митної справи та зовнішньоекономічної діяльності" %}</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box" data-toggle="modal" data-target="#serviceIT">
+                    <div class="icon"><i class="bi bi-pc-display"></i></div>
+                    <h4><a href="">{% trans "ІТ забезпечення" %}</a></h4>
+                    <p>{% trans "Розробка та впровадження програмного забезпечення для підвищення ефективності взаємодії співробітників та клієнтів з митними органами" %}</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+  
+</section><!-- End Services Section -->
+
+<!-- Modals -->
+<div class="modal fade" id="serviceCustoms" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">           
+            {% include "main/services-customs.html" %}     
+        </div> 
+    </div>
+</div>
+
+<div class="modal fade" id="serviceLogistics" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">           
+            {% include "main/services-logistics.html" %}     
+        </div> 
+    </div>
+</div>
+
+<div class="modal fade" id="serviceInfrastructure" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">           
+            {% include "main/services-infrastructure.html" %}     
+        </div> 
+    </div>
+</div>
+
+<div class="modal fade" id="serviceConsulting" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">           
+            {% include "main/services-consulting.html" %}     
+        </div> 
+    </div>
+</div>
+
+<div class="modal fade" id="serviceAdditional" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">           
+            {% include "main/services-additional.html" %}     
+        </div> 
+    </div>
+</div>
+
+<div class="modal fade" id="serviceIT" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">           
+            {% include "main/services-it.html" %}     
+        </div> 
+    </div>
+</div>

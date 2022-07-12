@@ -1,0 +1,351 @@
+{% load i18n %}
+{% load static %}
+
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+
+	<!-- ======= About Me ======= -->
+	<div class="about-me container">
+
+		<div class="section-title">
+			<h2>{% trans "Про компанію" %}</h2>
+			<p>{% trans "Дізнайтесь більше" %}</p>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4" data-aos="fade-right">
+				<img src="{% static 'img/me.jpg' %}" class="img-fluid" alt="">
+			</div>
+			<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+				<h3>{% trans "Митний брокер &amp; Митний консультант" %}</h3>
+				<p class="fst-italic">
+					{% trans "ФОП Морев Олексій Геннадійович надає повний комплекс послуг з митного оформлення товарів, консультації з питань застосування митного законодавства, оптимізації митних платежів та ефективного здійснення зовнішньоекономічної діяльності." %}
+				</p>
+				<div class="row">
+					<div class="col-lg-6">
+					<ul>
+						<li><i class="bi bi-chevron-right"></i> <strong>{% trans "Дата народження" %}:</strong> <span>20 {% trans "Жовтня" %} 1980</span></li>
+						<li><i class="bi bi-chevron-right"></i> <strong>{% trans "Веб-сторінка" %}:</strong> <span><a href="www.ombroker.pp.ua">www.ombroker.pp.ua</a></span></li>
+						<li><i class="bi bi-chevron-right"></i> <strong>{% trans "Телефон" %}:</strong> <span><a href="tel:+380672700861">+38 067 2700861</a></span></li>
+						<li><i class="bi bi-chevron-right"></i> <strong>{% trans "Місто" %}:</strong> <span>{% trans "Київ, Україна" %}</span></li>
+					</ul>
+					</div>
+					<div class="col-lg-6">
+					<ul>
+						<li><i class="bi bi-chevron-right"></i> <strong>{% trans "Вік" %}:</strong> <span>41</span></li>
+						<li><i class="bi bi-chevron-right"></i> <strong>{% trans "Освіта" %}:</strong> <span>{% trans "Вища: економічна, юридична" %}</span></li>
+						<li><i class="bi bi-chevron-right"></i> <strong>{% trans "Email" %}:</strong> <span><a href="mailto:office@ombroker.pp.ua">office@ombroker.pp.ua</a></span></li>
+						<li><i class="bi bi-chevron-right"></i> <strong>{% trans "Діяльність" %}:</strong> <span>{% trans "Вся територія України" %}</span></li>
+					</ul>
+					</div>
+				</div>
+				<p>
+					{% trans "Наявність 18 річного досвіду роботи в митних органах за різними напрямками діяльності (митне оформлення, боротьба з контрабандою та порушеннями митних правил, організація митного контролю, аудит), а також 4 річного досвіду робти в компаніях, що надають послуги з митного оформлення, логістики та гарантування, дають можливість впевнено пропонувати клієнтам якісні, ефективні та швидкі митно-брокерські послуги." %}
+				</p>
+			</div>
+		</div>
+
+	</div><!-- End About Me -->
+
+	<!-- ======= Counts ======= -->
+	<div class="counts container">
+
+		<div class="row">
+
+			<div class="col-lg-3 col-md-6">
+				<div class="count-box">
+					<i class="bi bi-emoji-smile"></i>
+					<span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+					<p>{% trans "Вдячні клієнти" %}</p>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+				<div class="count-box">
+					<i class="bi bi-journal-richtext"></i>
+					<span data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="1" class="purecounter"></span>
+					<p>{% trans "Митні оформлення" %}</p>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+				<div class="count-box">
+					<i class="bi bi-headset"></i>
+					<span data-purecounter-start="0" data-purecounter-end="63" data-purecounter-duration="1" class="purecounter"></span>
+					<p>{% trans "Консультації" %}</p>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+				<div class="count-box">
+					<i class="bi bi-award"></i>
+					<span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+					<p>{% trans "Проєкти" %}</p>
+				</div>
+			</div>
+
+		</div>
+
+	</div><!-- End Counts -->
+
+	<!-- ======= Skills  ======= -->
+	<div class="skills container">
+
+		<div class="section-title">
+			<h2>{% trans "Досвід" %}</h2>
+		</div>
+
+		<div class="row skills-content">
+
+			<div class="col-lg-6">
+
+				<div class="progress">
+					<span class="skill">{% trans "Митне оформлення" %} <i class="val">100%</i></span>
+					<div class="progress-bar-wrap">
+						<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+
+				<div class="progress">
+					<span class="skill">{% trans "Експедиція та логістика" %} <i class="val">70%</i></span>
+					<div class="progress-bar-wrap">
+						<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+
+				<div class="progress">
+					<span class="skill">{% trans "Режим спільного транзиту (NCTS)" %} <i class="val">50%</i></span>
+					<div class="progress-bar-wrap">
+						<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+
+				<div class="progress">
+					<span class="skill">{% trans "Дозвільна система" %} <i class="val">80%</i></span>
+					<div class="progress-bar-wrap">
+						<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+
+				<div class="progress">
+					<span class="skill">{% trans "Фінансове гарантування" %} <i class="val">100%</i></span>
+					<div class="progress-bar-wrap">
+						<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-lg-6">
+
+				<div class="progress">
+					<span class="skill">{% trans "Митне законодавство" %} <i class="val">100%</i></span>
+					<div class="progress-bar-wrap">
+						<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+
+				<div class="progress">
+					<span class="skill">{% trans "Нормотворчість" %} <i class="val">100%</i></span>
+					<div class="progress-bar-wrap">
+						<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+
+				<div class="progress">
+					<span class="skill">{% trans "Розбудова митної інфраструктури" %} <i class="val">80%</i></span>
+					<div class="progress-bar-wrap">
+						<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+
+				<div class="progress">
+					<span class="skill">{% trans "Аналітика ЗЕД" %} <i class="val">90%</i></span>
+					<div class="progress-bar-wrap">
+						<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+
+				<div class="progress">
+					<span class="skill">{% trans "Розробка митної ІТ складової" %} <i class="val">70%</i></span>
+					<div class="progress-bar-wrap">
+						<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div><!-- End Skills -->
+
+	<!-- ======= Pros ======= -->
+	<div class="interests container">
+
+		<div class="section-title">
+			<h2>{% trans "Переваги" %}</h2>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3 col-md-4">
+				<div class="icon-box">
+					<i class="bi bi-emoji-smile" style="color: #ffbb2c;"></i>
+					<h3>{% trans "Клієнтоорієнтованість" %}</h3>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+				<div class="icon-box">
+					<i class="bi bi-hurricane" style="color: #5578ff;"></i>
+					<h3>{% trans "Гнучкість" %}</h3>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+				<div class="icon-box">
+					<i class="bi bi-check-square" style="color: #e80368;"></i>
+					<h3>{% trans "Вмотивованість" %}</h3>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+				<div class="icon-box">
+					<i class="bi bi-hand-thumbs-up" style="color: #e361ff;"></i>
+					<h3>{% trans "Чесність" %}</h3>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 mt-4">
+				<div class="icon-box">
+					<i class="bi bi-star" style="color: #47aeff;"></i>
+					<h3>{% trans "Успішність" %}</h3>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 mt-4">
+				<div class="icon-box">
+					<i class="bi bi-pc-display-horizontal" style="color: #ffa76e;"></i>
+					<h3>{% trans "Технологічність" %}</h3>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 mt-4">
+				<div class="icon-box">
+					<i class="bi bi-lightbulb" style="color: #11dbcf;"></i>
+					<h3>{% trans "Сучасність" %}</h3>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 mt-4">
+				<div class="icon-box">
+					<i class="bi bi-usb-symbol" style="color: #4233ff;"></i>
+					<h3>{% trans "Багатовекторність" %}</h3>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 mt-4">
+				<div class="icon-box">
+					<i class="bi bi-gem" style="color: #b20969;"></i>
+					<h3>{% trans "Якість" %}</h3>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 mt-4">
+				<div class="icon-box">
+					<i class="bi bi-alarm" style="color: #b2904f;"></i>
+					<h3>{% trans "Швидкість" %}</h3>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 mt-4">
+				<div class="icon-box">
+					<i class="bi bi-bar-chart-line-fill" style="color: #ff5828;"></i>
+					<h3>{% trans "Ефективність" %}</h3>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 mt-4">
+				<div class="icon-box">
+					<i class="bi bi-cash-coin" style="color: #29cc61;"></i>
+					<h3>{% trans "Економічність" %}</h3>
+				</div>
+			</div>
+		</div>
+
+	</div><!-- End Interests -->
+
+	<!-- ======= Testimonials ======= -->
+	<div class="testimonials container">
+
+		<div class="section-title">
+			<h2>{% trans "Відгуки" %}</h2>
+		</div>
+
+		<div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+			<div class="swiper-wrapper">
+
+				<div class="swiper-slide">
+					<div class="testimonial-item">
+						<p>
+							<i class="bx bxs-quote-alt-left quote-icon-left"></i>
+							{% trans "Щвидке та якісне оформлення документів, консультація на найвищому рівні." %}
+							<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+						</p>
+						<img src="{% static 'img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+						<h3>{% trans "Андрій Загуменний" %}</h3>
+						<h4>{% trans "Менеджер ЗЕД" %}</h4>
+					</div>
+				</div><!-- End testimonial item -->
+
+				<div class="swiper-slide">
+					<div class="testimonial-item">
+						<p>
+							<i class="bx bxs-quote-alt-left quote-icon-left"></i>
+							{% trans "Дякую за надання якісних послуг з брокерської справи, професійну підготовку та оформленням документів." %}
+							<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+						</p>
+						<img src="{% static 'img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+						<h3>{% trans "Аліса Кім" %}</h3>
+						<h4>{% trans "Керівник відділу ЗЕД" %}</h4>
+					</div>
+				</div><!-- End testimonial item -->
+
+				<div class="swiper-slide">
+					<div class="testimonial-item">
+						<p>
+							<i class="bx bxs-quote-alt-left quote-icon-left"></i>
+							{% trans "Справжній профі у розмитненні. Все швидко, прозоро, доступно. Рекомендую!" %}
+							<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+						</p>
+						<img src="{% static 'img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+						<h3>{% trans "Олена Ліпіна" %}</h3>
+						<h4>{% trans "Експедитор" %}</h4>
+					</div>
+				</div><!-- End testimonial item -->
+
+				<div class="swiper-slide">
+					<div class="testimonial-item">
+						<p>
+							<i class="bx bxs-quote-alt-left quote-icon-left"></i>
+							{% trans "Дуже задоволений послугами, дійсно професіонал своєї справи, рекомендую" %}
+							<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+						</p>
+						<img src="{% static 'img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+						<h3>{% trans "Володимир Співак" %}</h3>
+						<h4>{% trans "Менеджер з логістики" %}</h4>
+					</div>
+				</div><!-- End testimonial item -->
+
+				<div class="swiper-slide">
+					<div class="testimonial-item">
+						<p>
+							<i class="bx bxs-quote-alt-left quote-icon-left"></i>
+							{% trans "Ми дуже вдячні Олексію за оперативну та професійну роботу. Все було швидко, завжди на зв’язку, відповідав з терпінням на всі наші запитання." %}
+							<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+						</p>
+						<img src="{% static 'img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+						<h3>{% trans "Віктор Вознюк" %}</h3>
+						<h4>{% trans "Перевізник" %}</h4>
+					</div>
+				</div><!-- End testimonial item -->
+
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<div class="owl-carousel testimonials-carousel">
+
+		</div>
+
+	</div><!-- End Testimonials  -->
+
+</section><!-- End About Section -->
